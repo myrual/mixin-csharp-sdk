@@ -3,26 +3,26 @@ namespace mixin_sdk_test
 {
     static class USRCONFIG
     {
-        public static string ClientId = "daf8b473-39a0-4419-991a-77f30d28dd6d";
-        public static string ClientSecret = "d83083de5a3683f80807f347776de46b2980e87d8145dbf3a3aef0cd5d698a70";
-        public static string PinCode = "485371";
-        public static string SessionId = "ec0550ac-bcc4-4da6-82d1-4c553b3e32c6";
-        public static string PinToken = "OxoXiP0X4DLDBjP+rz9wNvQSl7+BQ1LLxKo/LYPRfmAkiNJH2jUA4yt178OlRmJC8+Xt1Mt0rwMYbRDQlV6X8yHvZC5vqaHjaJxbzGoJPJ0/lIx0dJtkn3kEyz1jOhYHsdJbd9VZALBB/opTNlC3vC63DcJnHeOkE58iPaBJCoY=";
+        public static string ClientId = "595053f7-c441-4266-a8e7-ca6eb6123d63";
+        public static string ClientSecret = "f925e6191677a74af26ce09415098f817e96d207ddc2790d57a6c38e6907af6d";
+        public static string PinCode = "870714";
+        public static string SessionId = "c82588b0-b247-411a-8abf-aa26c430fc50";
+        public static string PinToken = "HgDpJ4krswhDmKKsNOq74CgpcrK19PNFLuc1SDOL2G6SKXosq7XpuHyRdyXS2or3vI4rTnvdwrb0FnEcUKtujIiJs4Bzi4Gjx0lTnruwGLtzQd19CFRoTThpPgfXoCLRPQli/05ZzzpCqtBOqhTA/rWAAXPnTXmaSefqJeUal5s=";
         public static string PrivateKey =
         @"-----BEGIN RSA PRIVATE KEY-----
-MIICXgIBAAKBgQCfjQzTqsuAEtUOT1fPqh9Xc52L3G1YN2bE7JLFt9PG6k3Hanal
-ZHTjAzD5sr9A8wivU48S5ryWaGU9275wZYnuF4D4ytzW8lj+Osc5jisL1GS/AZb4
-RuV1EMZuG6RirXjWc3dvXrCNGpijDyxtf78B264AHJfGA2xmDL/iDJBCbwIDAQAB
-AoGAEYxJ5N3cE/H+TNydI9HqMIwev8s2m4U8YFxEqEpXmIEcnNowwnASCwXG1S+7
-qUERq3bdPY7zHvfMaslIYMRKLyCkhETtiBjZiFJw84ANUN93i9cM/W6EN/KN5TNE
-Fnb4OKjzduSJ//9BmoCf+CV9oeq4zWUcdR5xhl5Z6x45AsECQQDqZbkhnNZN2ofv
-kB+Pa1+txDAJqrEoZ7j6Axlq3ikHLr//7/XbRytwtNoQNTU2LEtlRDaxxemim2Gd
-UvWgCcpNAkEArkFufbbfvbk8ML78+nUyqHWJnq1TfwlL5tJl+yuZAhwSbo1yaPS6
-RGYjRQ7GcSVYHoVX1wHMpeht2fasfW0lqwJBAKc46SncvVsPk7lKRenIvZq3g1ny
-J69eyC29Nk3yrqyMIrgR1oGYtZoTvBqiCxNZ6HQXhTmwq2yxk6NsgwWo1mUCQQCI
-QTeRa2aGJopvH1gWy39iBA4pGiSYx/8mrMv7WzrYUHUFJusYMIxZoXfgrs3yeR3v
-N5rYz1pjPFxxO5XiuW7jAkEAsLVHubu2ldvy89aNwA/ciCe7C43KwiVprPvIari0
-LS7+JeZlHrGiQoqmu/0YBVfIkPxMpeYOuRgxjCwdq0xvfQ==
+MIICXAIBAAKBgQCQ+/P6/rgAGyZh10DDDQIPYr7YvW7Ji8wJGbSwHmRT9imkHbiL
+nNKRXmrrUGT1eOW+zga19bk3rsqJvuRagnG63u4sYlqZWTzgz0w4HE3q5joYEJfF
+QXI4di84wBhFttdKHBnX6UU9WkBqfZ5orqmA4SUzHbEcAY4LrQUoos3bcwIDAQAB
+AoGAYn+Jpf/fKdNIJDiE+v6fY6yGU+F+ntam65fXNb+wEYqvh5vZgKAuPiyTHwMj
+U9Gq5BI8ZOpnxvitCR/zK7prYKpIeM/bfHl9LjGYQ7ZYZ1H2rK5drx+LXvJuJJM4
+YtwtXnM8UP5ONATq7q5uXHs8gaxVSH7Cc9OC3J8b53wSeQECQQDsW/K6n21a/Ska
+J6SyUgMxafbGbfAYbLH9lDe7HT70urXJzbsFNS3WvuRCBEPbngowPUzlXh0XnuX+
+8dY2YWRhAkEAnQgxAXiK1bFDwSg5onIKX/taRlrhbz7knjPKezwrjZqe8YZ7ifse
+SLQ3UOSezQ81DCvVRQaORvjUNPAG31xQUwJBAMROLdAgH3QltSB68ogEI5DD4Gi3
+4GR4ym/AzXTD+ojKFbfw/bZ6j4K+8td9sVpS7UVZdGc//kui9oUDGJX716ECQDtz
+mnogFRAKaMh8XjWuT1c/ZlI0nhzsBsoOeZ5mjWazH3H5pFP9Ct4jvL2XkLe6Bi9x
+ePEFJmCgXFceeLufy5kCQEAvzWTfgBjcePdmjmhJmqUjcdbqcH13M67YiuyHlOPd
+O8D5UhWcCtKTvmIrwR4jJ2YBdDrzCxfR9B23Es4AmbE=
 -----END RSA PRIVATE KEY-----";
     }
 }

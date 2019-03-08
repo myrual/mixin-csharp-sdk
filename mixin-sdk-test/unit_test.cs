@@ -252,22 +252,27 @@ namespace mixin_sdk_test
                     if (incomingMessage.action == "ACKNOWLEDGE_MESSAGE_RECEIPT")
                     {
                         //last message received by server
-                        System.Console.WriteLine("ACKNOWLEDGE_MESSAGE_RECEIPT + " + incomingMessage.data.message_id);
+                        System.Console.WriteLine("ACKNOWLEDGE_MESSAGE_RECEIPT + " + incomingMessage.data.message_id + " with status:" + incomingMessage.data.status);
                     }
                     else if(incomingMessage.action == "CREATE_MESSAGE")
                     {
                         if(incomingMessage.data.conversation_id != "") {
-                            string responsewebSocketID = Guid.NewGuid().ToString();
-                            System.Console.WriteLine("Send response for message id" + incomingMessage.data.message_id + ": websocketid->"+ responsewebSocketID);
-                            callback.SendMessageResponse(incomingMessage.data.message_id, responsewebSocketID).Wait();
+                            System.Console.WriteLine("Send response for message id" + incomingMessage.data.message_id);
+                            callback.SendMessageResponse(incomingMessage.data.message_id).Wait();
                             byte[] strOriginal = Convert.FromBase64String(incomingMessage.data.data);
                             string clearText = System.Text.Encoding.UTF8.GetString(strOriginal);
                             System.Console.WriteLine(clearText);
-                            string thiswebSocketID = Guid.NewGuid().ToString();
                             string thisMessageId = Guid.NewGuid().ToString();
-                            System.Console.WriteLine("Send echo with message id:" + thisMessageId + " :websocketid-> " + thiswebSocketID);
-                            callback.SendTextMessage(incomingMessage.data.conversation_id, clearText, thisMessageId, thiswebSocketID).Wait();
+                            System.Console.WriteLine("Send echo with message id:" + thisMessageId);
+                            callback.SendTextMessage(incomingMessage.data.conversation_id, clearText, thisMessageId).Wait();
                         }
+                        else {
+                            if(incomingMessage.data.status == "SENT") {
+                                System.Console.WriteLine("Message:" + incomingMessage.data.message_id + " has been sent");
+                            }
+
+                        }
+
                     }
                 }
 

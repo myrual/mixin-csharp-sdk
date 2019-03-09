@@ -258,13 +258,13 @@ namespace mixin_sdk_test
                     {
                         if(incomingMessage.data.conversation_id != "") {
                             System.Console.WriteLine("Send response for message id" + incomingMessage.data.message_id);
-                            callback.SendMessageResponse(incomingMessage.data.message_id).Wait();
+                            callback.SendMessageResponse(incomingMessage.data.message_id);
                             byte[] strOriginal = Convert.FromBase64String(incomingMessage.data.data);
                             string clearText = System.Text.Encoding.UTF8.GetString(strOriginal);
                             System.Console.WriteLine(clearText);
                             string thisMessageId = Guid.NewGuid().ToString();
                             System.Console.WriteLine("Send echo with message id:" + thisMessageId);
-                            callback.SendTextMessage(incomingMessage.data.conversation_id, clearText, thisMessageId).Wait();
+                            callback.SendTextMessage(incomingMessage.data.conversation_id, clearText, thisMessageId);
                         }
                         else {
                             if(incomingMessage.data.status == "SENT") {
